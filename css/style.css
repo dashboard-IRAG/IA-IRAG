@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-image: url("/assets/universidad-de-bogota-jorge-tadeo-lozano-banner.jpg");
+  background-image: url("../assets/universidad-de-bogota-jorge-tadeo-lozano-banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,7 +63,7 @@ body::before {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.938);
   text-align: justify;
   max-width: 1100px;
-  margin: 60px auto;
+  margin: 40px auto;
   padding: 0 1rem;
 }
 
@@ -71,9 +71,8 @@ body::before {
 .glass-box {
   background: rgba(255, 255, 255, 0.15);
   border-radius: 15px;
-  padding: 2rem;
+  padding: 1.5rem;
   margin: 2rem auto;
-  width: 90%;
   max-width: 1200px;
   backdrop-filter: blur(2px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -108,4 +107,18 @@ h1 {
 }
 p {
   animation-delay: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+  .container__text h1 {
+    font-size: 1.5rem;
+  }
+
+  .container__principal {
+    padding: 45px 16px;
+  }
+
+  iframe {
+    height: 450px;
+  }
 }
