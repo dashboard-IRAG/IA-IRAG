@@ -27,18 +27,14 @@
           disponibilidad de datos abiertos y los avances en inteligencia
           artificial (IA) ofrecen nuevas oportunidades para transformar el
           análisis y la gestión de estos eventos de salud pública.
+          <br><br>
+          Este dashboard presenta un sistema de vigilancia de la Infección Respiratoria Aguda Grave (IRAG) en Bogotá que integra la limpieza y análisis exploratorio de 71 326 registros de SIVIGILA‑INS (2018‑2023) con un modelo predictivo basado en redes neuronales LSTM multicapas. Tras comparar árboles de decisión y bosques aleatorios sobre series temporales semanales enriquecidas con variables demográficas y componentes estacionales seno‑coseno, la LSTM — optimizándose con normalización, dropout y early‑stopping ofreció el mejor equilibrio entre ajuste y generalización (R²_train = 0,926 y R²_test = 0,846). 
+          <br><br>
+          Se incorporaron tarjetas dinámicas que resumen indicadores clave como el total de casos confirmados, los casos identificados en población vulnerable, los casos en adultos mayores, así como los casos confirmados en el último año con datos reales (2023) y en el año más reciente estimado por el modelo predictivo (2025).
+          Todas las visualizaciones están integradas con filtros de segmentación que permiten al usuario interactuar con el tablero y ajustar la visualización de los datos según año, sexo, grupo etario y condición de vulnerabilidad.
           <br>
-          El presente artículo tiene como objetivo diseñar un sistema
-          interactivo en Power BI que permita visualizar de forma
-          detallada los casos de IRAG en Bogotá, incorporando un
-          modelo de inteligencia artificial para predecir la evolución
-          futura de los posibles casos confirmados segmentando grupos
-          etarios, estrato socioeconómico y población vulnerable a partir
-          del análisis de datos históricos entre 2018 y 2023. La
-          motivación central es ofrecer una herramienta práctica y
-          accesible para apoyar la planeación sanitaria, priorizando
-          información que pueda contribuir a la toma de decisiones
-          preventivas
+          <br>
+          En la sección del dashboard se presentan dos páginas: la primera corresponde a la visualización histórica y la segunda a la sección de predicción.
         </p>
       </div>
       <div class="iframe glass-box">
@@ -51,6 +47,51 @@
           allowfullscreen="true"
         ></iframe>
       </div>
+      <div class="container__resultados">
+        <p class="title-text">Resultados</p>
+      </div>
+      <div class="container__text container__flex">
+        <div>
+          <p class="title-text">Datos históricos 2018 - 2023 </p>
+          <p>
+            <ul>
+              <li>Cerca de 15.000 casos confirmados, 934 en población vulnerable</li>
+              <li>Adultos mayores: grupo más afectado (6.972 casos), seguido por adultos y primera infancia.</li>
+              <li>Más del 50 % de los casos se concentraron en estrato socioeconómico bajo</li>
+              <li>Mayor incidencia en 2022 y 2023</li>
+              <li>Se evidencian desigualdades por edad y nivel socioeconómico </li>
+            </ul>
+          </p>
+        </div>
+        <img src="/assets/resultados-1.png" alt="">
+      </div>
+      <div class="container__text container__flex container__flex-two">
+        <img src="/assets/resultados-2.png" alt="">
+        <div>
+          <p class="title-text">Datos de predicción 2024 - 2025 </p>
+          <p>
+            <ul>
+              <li>Cerca de 15.000 casos confirmados, 934 en población vulnerable</li>
+              <li>Adultos mayores: grupo más afectado (6.972 casos), seguido por adultos y primera infancia.</li>
+              <li>Más del 50 % de los casos se concentraron en estrato socioeconómico bajo</li>
+              <li>Mayor incidencia en 2022 y 2023</li>
+              <li>Se evidencian desigualdades por edad y nivel socioeconómico </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="container__text">
+        <div>
+          <p>
+            Al contrastar los datos históricos con las predicciones obtenidas, se identificó que durante el periodo 2024 – 2025 persistirá una concentración importante de casos en los estratos socioeconómicos bajos y un incremento proporcional en la población adulta. Esta dinámica sugiere la necesidad de ampliar el enfoque de intervención hacia este segmento, sin desatender la vigilancia en los menores y adultos mayores, que continúan siendo grupos de alta vulnerabilidad clínica. El análisis permite anticipar escenarios de riesgo y planificar acciones que reduzcan desigualdades en la incidencia de IRAG. 
+          </p>
+        </div>
+      </div>
     </div>
   </body>
+  <footer class="footer">
+    <p>Presentado por: Diego Baquero y Felipe Sabogal</p>
+    <p>Universidad Jorge Tadeo Lozano – Programa de Ingeniería de Sistemas</p>
+    <p>2025</p>
+  </footer>
 </html>
